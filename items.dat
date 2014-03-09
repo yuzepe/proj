@@ -1,1 +1,5 @@
-stick cylinder 2 2 wood
+Ball sphere 10 Aluminium
+Barren cuboid 3 5 8 Zinn
+Kugel sphere 15 Wolfram
+Stick cylinder 1.5 40 Eisen
+table cuboid 80 80 4 Eisen

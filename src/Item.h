@@ -19,7 +19,8 @@ using namespace std;
 
 class Item;
 typedef Item* ItemPtr;
-typedef map<string, ItemPtr>* ItemPtrMapPtr;
+typedef map<string, ItemPtr> ItemPtrMap;
+typedef ItemPtrMap* ItemPtrMapPtr;
 
 class Item
 {

@@ -3,7 +3,7 @@
 touch namelinks.txt
 site="http://www.mineralienatlas.de/lexikon/index.php/"
 abc="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-for i in `seq 1 2`;
+for i in `seq 1 26`;
 do
 	letter=$(echo $abc | head -c $i | tail -c 1)
 	wget -q -O letter.html ${site}Mineralien-$letter

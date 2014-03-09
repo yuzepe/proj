@@ -17,6 +17,18 @@ class Cuboid : public Shape
 public:
 	inline Cuboid(float length, float width, float height)
 			: m_length(length), m_width(width), m_height(height) {};
+	inline Cuboid(float length, float width, int height)
+			: Cuboid(length, width, static_cast<float>(height)) {};
+	inline Cuboid(float length, int width, float height)
+			: Cuboid(length, static_cast<float>(width), height) {};
+	inline Cuboid(int length, float width, float height)
+			: Cuboid(static_cast<float>(length), width, height) {};
+	inline Cuboid(float length, int width, int height)
+			: Cuboid(length, static_cast<float>(width), static_cast<float>(height)) {};
+	inline Cuboid(int length, float width, int height)
+			: Cuboid(static_cast<float>(length), width, static_cast<float>(height)) {};
+	inline Cuboid(int length, int width, float height)
+			: Cuboid(static_cast<float>(length), static_cast<float>(width), height) {};
 	inline Cuboid(int length, int width, int height)
 			: Cuboid(static_cast<float>(length), static_cast<float>(width), static_cast<float>(height)) {};
 	~Cuboid();

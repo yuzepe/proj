@@ -19,7 +19,8 @@ using namespace std;
 
 class Material;
 typedef Material* MaterialPtr;
-typedef map<string, MaterialPtr>* MaterialPtrMapPtr;
+typedef map<string, MaterialPtr> MaterialPtrMap;
+typedef MaterialPtrMap* MaterialPtrMapPtr;
 
 class Material
 {

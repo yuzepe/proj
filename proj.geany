@@ -14,7 +14,7 @@ indent_mode=2
 
 [project]
 name=proj
-base_path=/home/bruno/Arbeitsfläche/proj/
+base_path=/home/bruno/proj/
 description=
 file_patterns=
 
@@ -23,17 +23,19 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=7
-FILE_NAME_0=153;Make;0;16;1;1;0;%2Fhome%2Fbruno%2FArbeitsfläche%2Fproj%2FMakefile;0;4
-FILE_NAME_1=3528;C++;0;16;1;1;0;%2Fhome%2Fbruno%2FArbeitsfläche%2Fproj%2Fsrc%2Fmain.cpp;0;4
-FILE_NAME_2=582;C++;0;16;1;1;0;%2Fhome%2Fbruno%2FArbeitsfläche%2Fproj%2Fsrc%2FFileHandler.h;0;4
-FILE_NAME_3=561;C++;0;16;1;1;0;%2Fhome%2Fbruno%2FArbeitsfläche%2Fproj%2Fsrc%2FFileHandler.cpp;0;4
-FILE_NAME_4=262;C++;0;16;1;1;0;%2Fhome%2Fbruno%2FArbeitsfläche%2Fproj%2Fsrc%2FConsoleHandler.h;0;4
-FILE_NAME_5=485;C++;0;16;1;1;0;%2Fhome%2Fbruno%2FArbeitsfläche%2Fproj%2Fsrc%2FConsoleHandler.cpp;0;4
-FILE_NAME_6=1299;C++;0;16;1;1;0;%2Fhome%2Fbruno%2FArbeitsfläche%2Fproj%2Fsrc%2FParser.h;0;4
-FILE_NAME_7=3531;C++;0;16;1;1;0;%2Fhome%2Fbruno%2FArbeitsfläche%2Fproj%2Fsrc%2FParser.cpp;0;4
-FILE_NAME_8=247;C++;0;16;1;1;0;%2Fhome%2Fbruno%2FArbeitsfläche%2Fproj%2Fsrc%2FMaterial.h;0;4
-FILE_NAME_9=0;C++;0;16;1;1;0;%2Fhome%2Fbruno%2FArbeitsfläche%2Fproj%2Fsrc%2FItem.h;0;4
+current_page=5
+FILE_NAME_0=185;Make;0;16;1;1;0;%2Fhome%2Fbruno%2Fproj%2FMakefile;0;4
+FILE_NAME_1=586;C++;0;16;1;1;0;%2Fhome%2Fbruno%2Fproj%2Fsrc%2Fmain.cpp;0;4
+FILE_NAME_2=774;C++;0;16;1;1;0;%2Fhome%2Fbruno%2Fproj%2Fsrc%2FFileHandler.h;0;4
+FILE_NAME_3=561;C++;0;16;1;1;0;%2Fhome%2Fbruno%2Fproj%2Fsrc%2FFileHandler.cpp;0;4
+FILE_NAME_4=203;C++;0;16;1;1;0;%2Fhome%2Fbruno%2Fproj%2Fsrc%2FConsoleHandler.h;0;4
+FILE_NAME_5=1341;C++;0;16;1;1;0;%2Fhome%2Fbruno%2Fproj%2Fsrc%2FConsoleHandler.cpp;0;4
+FILE_NAME_6=503;C++;0;16;1;1;0;%2Fhome%2Fbruno%2Fproj%2Fsrc%2FParser.h;0;4
+FILE_NAME_7=3683;C++;0;16;1;1;0;%2Fhome%2Fbruno%2Fproj%2Fsrc%2FParser.cpp;0;4
+FILE_NAME_8=305;C++;0;16;1;1;0;%2Fhome%2Fbruno%2Fproj%2Fsrc%2FMaterial.h;0;4
+FILE_NAME_9=307;C++;0;16;1;1;0;%2Fhome%2Fbruno%2Fproj%2Fsrc%2FItem.h;0;4
+FILE_NAME_10=368;C++;0;16;1;1;0;%2Fhome%2Fbruno%2Fproj%2Fsrc%2FTool.h;0;4
+FILE_NAME_11=508;C++;0;16;1;1;0;%2Fhome%2Fbruno%2Fproj%2Fsrc%2FTool.cpp;0;4
 
 [VTE]
 last_dir=/home/bruno
@@ -51,7 +53,7 @@ NF_02_CM=make %e.o
 NF_02_WD=
 NF_00_LB=_Make
 NF_00_CM=make all
-NF_00_WD=/home/bruno/Arbeitsfläche/proj/
+NF_00_WD=/home/bruno/proj/
 NF_01_LB=Make (eigenes _Target)
 NF_01_CM=make 
 NF_01_WD=
@@ -60,7 +62,7 @@ EX_00_CM="%pproj"
 EX_00_WD=
 C++FT_02_LB=Bereinigen
 C++FT_02_CM=rm *.gch *.o
-C++FT_02_WD=/home/bruno/Arbeitsfläche/proj/src/
+C++FT_02_WD=/home/bruno/proj/src/
 NF_03_LB=Clean
 NF_03_CM=make clean
-NF_03_WD=/home/bruno/Arbeitsfläche/proj/
+NF_03_WD=/home/bruno/proj/

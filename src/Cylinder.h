@@ -17,6 +17,10 @@ class Cylinder : public Shape
 public:
 	inline Cylinder(float radius, float height)
 			: m_radius(radius), m_height(height) {};
+	inline Cylinder(int radius, float height)
+			: Cylinder(static_cast<float>(radius), height) {};
+	inline Cylinder(float radius, int height)
+			: Cylinder(radius, static_cast<float>(height)) {};
 	inline Cylinder(int radius, int height)
 			: Cylinder(static_cast<float>(radius), static_cast<float>(height)) {};
 	~Cylinder();

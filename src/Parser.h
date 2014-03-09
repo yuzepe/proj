@@ -28,11 +28,13 @@ enum ConsoleCommandName
 	eCmdHelp,
 	eCmdExit,
 	eCmdListMaterials,
-	eCmdCreateMaterial,
+	eCmdCreateMaterial, // find/search functions?
 	eCmdRemoveMaterial,
 	eCmdListItems,
 	eCmdCreateItem,
-	eCmdRemoveItem
+	eCmdRemoveItem,
+	eCmdListTools,
+	eCmdCreateTool
 };
 
 class ConsoleCommand;
