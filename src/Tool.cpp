@@ -7,8 +7,9 @@
 
 #include "Tool.h"
 
-Tool::Tool(string name, ItemPtrMapPtr p_mapItems);
- : m_name(name), mp_mapItems(p_mapItems)
+Tool::Tool(string name, ItemPtrMapPtr p_mapItems)
+ : m_name(name)
+ , mp_mapItems(p_mapItems)
 {
 }
 
@@ -41,4 +42,13 @@ string Tool::toString()
 		ostr << left << "\n" << setw(24) << it->second->toString();
 
 	return ostr.str();
+}
+
+float Tool::getMass()
+{
+	float mass = 0.0f;
+
+	for(ItemPtrMap::iterator it = mp_mapItems->begin(); it != mp_mapItems->end(); ++it)
+		mass += it->second->getMass();
+	return mass;
 }

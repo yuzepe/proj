@@ -32,10 +32,9 @@ public:
 	string toRawString();
 	string toString();
 
-	inline float getMass() { return (mp_shape->getVolume() * mp_material->getDensity() / 1000.0f); }; // Masse in kg
+	inline float getMass(); // Masse in kg
 	inline string getName() { return m_name; };
-	inline ShapePtr getShape() { return mp_shape; };
-	inline MaterialPtr getMaterial() { return mp_material; };
+	inline ItemPtrMapPtr getItems() { return mp_mapItems; };
 private:
 	string m_name;
 	ItemPtrMapPtr mp_mapItems;

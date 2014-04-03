@@ -139,11 +139,11 @@ ConsoleCommandPtr Parser::parseConsole(const string& str)
 	if(!tokens.empty())
 		if( (tokens.size() >= 4) && (tokens[0] == "create" && tokens[1] == "tool") )
 		{
-			vector<string> v_str = { tokens[2],  tokens[3] };
+			vector<string> v_str = { tokens[2]/*,  tokens[3]*/ };
 			//for(vector<string>::iterator it = tokens.begin(); it != tokens.end(); ++it)
 			// alle weiteren Elemente einfügen
-			for(unsigned int i = 4; i < tokens.size(); ++i)
-				v_str[i-2] = tokens[i]; // v_str.push_back(tokens[i]);
+			for(unsigned int i = 3; i < tokens.size(); ++i)
+				v_str.push_back(tokens[i]);//cout << tokens[i] << " " << i << " " << tokens.size() << endl;//v_str[i-2] = tokens[i];
 			return new ConsoleCommand(eCmdCreateTool, v_str);
 		}
 

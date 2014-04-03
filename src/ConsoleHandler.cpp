@@ -142,6 +142,7 @@ void ConsoleHandler::start()
 					itm_it = mp_mapItems->find(sArgs[i]);
 					if(found && itm_it != mp_mapItems->end())
 					{
+						//cout << itm_it->second << endl;
 						(*p_mapItems)[sArgs[i]] = itm_it->second;
 					}
 					else { found = false; cout << "Item \"" << sArgs[i] << "\" wurde nicht gefunden" << endl; }
@@ -150,7 +151,7 @@ void ConsoleHandler::start()
 				{
 					p_tool = new Tool(sArgs[0], p_mapItems);
 					(*mp_mapTools)[sArgs[0]] = p_tool;
-				} // else <--- Speicherfreigabe von p_mapItems
+				} // else <--- Speicherfreigabe von p_mapItems, enthält nur referenz-zeiger, nur die liste muss gel. werden
 			break;
 		}
 		delete cmd;

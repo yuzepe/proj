@@ -8,7 +8,8 @@
 #include "FileHandler.h"
 
 FileHandler::FileHandler(MaterialPtrMapPtr p_mapMaterials, ItemPtrMapPtr p_mapItems)
-: mp_mapMaterials(p_mapMaterials), mp_mapItems(p_mapItems)
+ : mp_mapMaterials(p_mapMaterials)
+ , mp_mapItems(p_mapItems)
 {
 }
 

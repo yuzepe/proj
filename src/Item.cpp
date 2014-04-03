@@ -8,7 +8,9 @@
 #include "Item.h"
 
 Item::Item(string name, ShapePtr p_shape, MaterialPtr p_material)
-: m_name(name), mp_shape(p_shape), mp_material(p_material)
+ : m_name(name)
+ , mp_shape(p_shape)
+ , mp_material(p_material)
 {
 }
 

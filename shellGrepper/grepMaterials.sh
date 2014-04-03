@@ -1,6 +1,6 @@
 #!/bin/bash
 
-touch materials.dat
+rm -f materials.dat
 filename="names.txt"
 while read -r line
 do

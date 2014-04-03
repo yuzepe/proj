@@ -1,6 +1,6 @@
 #!/bin/bash
 
-touch namelinks.txt
+rm -f namelinks.txt
 site="http://www.mineralienatlas.de/lexikon/index.php/"
 abc="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 for i in `seq 1 26`;

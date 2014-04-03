@@ -35,7 +35,7 @@ int main()
 	fileHandler.saveItems();
 	fileHandler.saveMaterials();
 
-	// langst das, oder muss durch die Elemente iteriet und diese gelöscht werden?
+	// langst das, oder muss durch die Elemente iteriert und diese gelöscht werden?
 	delete p_mapMaterials;
 	delete p_mapItems;
 	delete p_mapTools;

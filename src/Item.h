@@ -41,4 +41,4 @@ private:
 	MaterialPtr mp_material;
 };
 
-#endif
+#endif // ITEM_H
