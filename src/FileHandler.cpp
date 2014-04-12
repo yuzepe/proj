@@ -7,9 +7,10 @@
 
 #include "FileHandler.h"
 
-FileHandler::FileHandler(MaterialPtrMapPtr p_mapMaterials, ItemPtrMapPtr p_mapItems)
+FileHandler::FileHandler(MaterialPtrMapPtr p_mapMaterials, ItemPtrMapPtr p_mapItems, ToolPtrMapPtr p_mapTools)
  : mp_mapMaterials(p_mapMaterials)
  , mp_mapItems(p_mapItems)
+ , mp_mapTools(p_mapTools)
 {
 }
 
@@ -95,6 +96,51 @@ void FileHandler::loadItems()
 	// Speicher freigeben? bzw. schon in while Schleife?
 }
 
+void FileHandler::loadTools()
+{
+	Parser parser;
+	string str;
+	ifstream file;
+	string filename = "tools.dat";
+	ConsoleCommandPtr cmd;
+	vector<string> sArgs;
+	ItemPtrMap::iterator map_it;
+	ItemPtrMapPtr p_mapItems = new ItemPtrMap;
+	ToolPtr p_tool;
+	bool found = true;
+
+	cout << "LOG: Lese aus Datei " << filename << endl;
+
+	file.open(filename, ios::in);
+	while (!file.eof())
+    {
+		getline(file, str);
+		cmd = parser.parseTool(str);
+		if(cmd->getName() == eCmdCreateTool)
+		{
+			sArgs = cmd->getsArgs();
+			for(unsigned int i=1; i<sArgs.size(); ++i)
+			{
+				map_it = mp_mapItems->find(sArgs[i]);
+				if(map_it != mp_mapItems->end())
+				{
+					(*p_mapItems)[sArgs[i]] = map_it->second;
+				}
+				else { cout << "Item \"" << sArgs[i] << "\" wurde nicht gefunden" << endl;
+					found = false; }
+				}
+			if(found)
+			{
+				p_tool = new Tool(sArgs[0], p_mapItems);
+				(*mp_mapTools)[sArgs[0]] = p_tool;
+			}
+		}
+	}
+	file.close();
+
+	// Speicher freigeben? bzw. schon in while Schleife?
+}
+
 void FileHandler::saveMaterials()
 {
 	saveData("materials.dat", mp_mapMaterials);
@@ -103,6 +149,11 @@ void FileHandler::saveMaterials()
 void FileHandler::saveItems()
 {
 	saveData("items.dat", mp_mapItems);
+}
+
+void FileHandler::saveTools()
+{
+	saveData("tools.dat", mp_mapTools);
 }
 
 template <typename T> void FileHandler::loadData(string filename, T data)

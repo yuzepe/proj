@@ -66,6 +66,7 @@ public:
 	ConsoleCommandPtr parseConsole(const string& str);
 	ConsoleCommandPtr parseMaterial(const string& str);
 	ConsoleCommandPtr parseItem(const string& str);
+	ConsoleCommandPtr parseTool(const string& str);
 private:
 	string& lowerStr(string& str);
 	vector<string> tokenize(const string& str, const string& delim);

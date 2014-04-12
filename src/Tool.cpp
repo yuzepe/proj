@@ -25,7 +25,8 @@ string Tool::toRawString()
 	ostr << m_name;
 
 	for(ItemPtrMap::iterator it = mp_mapItems->begin(); it != mp_mapItems->end(); ++it)
-		ostr << "\n" << it->second->toRawString();
+		//ostr << " " << it->second->toRawString();
+		ostr << " " << it->second->getName();
 
 	return ostr.str();
 }
@@ -35,11 +36,11 @@ string Tool::toString()
 	ostringstream name_mass;
 	ostringstream ostr;
 
-	name_mass << m_name << "(" << getMass() << " kg)";
+	name_mass << m_name << "(" << getMass() << " kg):";
 	ostr << left << setw(20) << name_mass.str();
 
 	for(ItemPtrMap::iterator it = mp_mapItems->begin(); it != mp_mapItems->end(); ++it)
-		ostr << left << "\n" << setw(24) << it->second->toString();
+		ostr << left << "\n  " << setw(24) << it->second->toString();
 
 	return ostr.str();
 }

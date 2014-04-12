@@ -213,6 +213,21 @@ ConsoleCommandPtr Parser::parseItem(const string& str)
 	return new ConsoleCommand(eCmdEmpty);
 }
 
+ConsoleCommandPtr Parser::parseTool(const string& str)
+{
+	vector<string> tokens = tokenize(str, " ");
+
+	if(!tokens.empty() && tokens.size() >= 2)
+		return new ConsoleCommand(eCmdCreateTool, tokens);
+
+	//~ if(!tokens.empty())
+		//~ for(i=0; i<tokens.size(); ++i)
+		//~ {
+//~
+		//~ }
+	return new ConsoleCommand(eCmdEmpty);
+}
+
 /*MaterialPtr Parser::parseMaterial(const string& str)
 {
 	vector<string> tokens = tokenize(str, " ");

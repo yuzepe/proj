@@ -21,17 +21,19 @@ int main()
 	MaterialPtrMapPtr p_mapMaterials = new MaterialPtrMap;
 	ItemPtrMapPtr p_mapItems = new ItemPtrMap;
 	ToolPtrMapPtr p_mapTools = new ToolPtrMap;
-	FileHandler fileHandler(p_mapMaterials, p_mapItems/*, p_mapTools*/);
+	FileHandler fileHandler(p_mapMaterials, p_mapItems, p_mapTools);
 	ConsoleHandler consoleHandler(p_mapMaterials, p_mapItems, p_mapTools);
 
 	// load recources
 	fileHandler.loadMaterials();
 	fileHandler.loadItems();
+	fileHandler.loadTools();
 
 	// operate console
 	/*ErrorCode = */consoleHandler.start();
 
 	// save resources
+	fileHandler.saveTools();
 	fileHandler.saveItems();
 	fileHandler.saveMaterials();
 

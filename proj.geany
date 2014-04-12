@@ -23,16 +23,15 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=8
+current_page=0
 FILE_NAME_0=0;C++;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2Fmain.cpp;0;4
 FILE_NAME_1=0;C;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2FParser.h;0;4
-FILE_NAME_2=0;C++;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2FParser.cpp;0;4
-FILE_NAME_3=0;C;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2FConsoleHandler.h;0;4
-FILE_NAME_4=0;C++;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2FConsoleHandler.cpp;0;4
-FILE_NAME_5=0;C;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2FFileHandler.h;0;4
-FILE_NAME_6=0;C++;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2FFileHandler.cpp;0;4
-FILE_NAME_7=0;C;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2FItem.h;0;4
-FILE_NAME_8=43;C++;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2FItem.cpp;0;4
+FILE_NAME_2=3820;C++;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2FParser.cpp;0;4
+FILE_NAME_3=2;C;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2FConsoleHandler.h;0;4
+FILE_NAME_4=0;C;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2FFileHandler.h;0;4
+FILE_NAME_5=0;C++;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2FFileHandler.cpp;0;4
+FILE_NAME_6=0;C;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2FItem.h;0;4
+FILE_NAME_7=43;C++;0;EUTF-8;1;1;0;%2Fhome%2Fyoshi%2Fproj%2Fsrc%2FItem.cpp;0;4
 
 [VTE]
 last_dir=/home

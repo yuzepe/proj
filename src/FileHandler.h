@@ -14,6 +14,7 @@
 
 #include "Material.h"
 #include "Item.h"
+#include "Tool.h"
 #include "Parser.h"
 
 using namespace std;
@@ -21,14 +22,16 @@ using namespace std;
 class FileHandler
 {
 public:
-	FileHandler(MaterialPtrMapPtr p_mapMaterials, ItemPtrMapPtr p_mapItems);
+	FileHandler(MaterialPtrMapPtr p_mapMaterials, ItemPtrMapPtr p_mapItems, ToolPtrMapPtr p_mapTools);
 	~FileHandler();
 
 	void loadMaterials();
 	void loadItems();
+	void loadTools();
 
 	void saveMaterials();
 	void saveItems();
+	void saveTools();
 
 	/*map<string, MaterialPtr> loadMaterials();
 	void saveMaterials(map<string, MaterialPtr>& map_MaterialPtr);
@@ -40,6 +43,7 @@ public:
 private:
 	MaterialPtrMapPtr mp_mapMaterials;
 	ItemPtrMapPtr mp_mapItems;
+	ToolPtrMapPtr mp_mapTools;
 
 	template <typename T> void loadData(string filename, T data);
 	template <typename T> void saveData(string filename, T* data);

@@ -53,7 +53,7 @@ void ConsoleHandler::start()
 					 << "list items - Listet die Items im Inventar auf" << endl
 					 << "create item <name> <shape> [0] [1] [2] <material> - Erstellt ein Item im Inventar" << endl
 					 << "list tools - Listet die Tools im Inventar auf" << endl
-					 << "create tool <name> <tools> - Erstellt ein Tool im Inventar" << endl;
+					 << "create tool <name> <items> - Erstellt ein Tool im Inventar" << endl;
 			break;
 			case eCmdExit:
 				cout << "Eingabe wird geschlossen..." << endl;
